@@ -4,6 +4,15 @@
     "email": "khadeejamanha1110@gmail.com"
   },
   "records": {
-    "CNAME": "yad2thisyazm.github.io"
+    "A": ["185.199.108.153", "185.199.109.153", "185.199.110.153", "185.199.111.153"],
+    "AAAA": ["2606:50c0:8000::153", "2606:50c0:8001::153", "2606:50c0:8002::153", "2606:50c0:8003::153"],
+    "MX": [
+      { "target": "mx1.forwardemail.net", "priority": 10 },
+      { "target": "mx2.forwardemail.net", "priority": 10 }
+    ],
+    "TXT": [
+      "forward-email=khadeejamanha1110@gmail.com",
+      "v=spf1 include:spf.forwardemail.net -all"
+    ]
   }
 }
